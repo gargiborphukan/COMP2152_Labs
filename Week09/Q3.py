@@ -46,13 +46,6 @@ class TestCelsius(unittest.TestCase):
         self.assertEqual(celsius_to_fahrenheit(-40), -40.0)
     
     
-
-
-# TODO: Complete TestValidIP
-#   test_valid         → is_valid_ip("192.168.1.1") is True
-#   test_invalid_octet → is_valid_ip("256.1.1.1")   is False
-#   test_too_few_parts → is_valid_ip("1.2.3")       is False
-#   test_empty         → is_valid_ip("")            is False
 class TestValidIP(unittest.TestCase):
     def test_valid(self):
         self.assertTrue(is_valid_ip("1.1.1.1"))
@@ -63,12 +56,6 @@ class TestValidIP(unittest.TestCase):
     def test_empty(self):
         self.assertFalse(is_valid_ip(""))
 
-
-# TODO: Complete TestFizzBuzz
-#   test_fizz     → fizzbuzz(3)  == "Fizz"
-#   test_buzz     → fizzbuzz(5)  == "Buzz"
-#   test_fizzbuzz → fizzbuzz(15) == "FizzBuzz"
-#   test_number   → fizzbuzz(7)  == "7"
 class TestFizzBuzz(unittest.TestCase):
     def test_fizz(self):
         self.assertEqual(fizzbuzz(3),"Fizz")
